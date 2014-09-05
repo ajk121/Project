@@ -1,0 +1,15 @@
+<div class='formingredient'>
+
+  <% if can? :update, @recipe %>
+  <%= form_for @ingredients do |f| %>
+  <%= f.error_messages %>
+  <p>
+    <%= f.label :name %><br />
+    <%= f.text_field :name %>
+    <%= f.submit %>
+  </p>
+
+
+  <% end %>
+  <% end %> 
+</div>

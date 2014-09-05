@@ -1,0 +1,14 @@
+<div class='editcategory'>
+  <h2>Please Edit Your Category</h2>
+  
+  
+  <%= form_for @category do |f| %>
+  <%= f.label :name %>
+  <%= f.text_field :name %>
+  
+  <%= f.submit 'Edit The Category!' %>
+  <% end %>
+
+  <p><%= link_to "Back to categories", categories_path %></p>
+</div>
+</div>

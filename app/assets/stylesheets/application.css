@@ -1,0 +1,778 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or vendor/assets/stylesheets of plugins, if any, can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the top of the
+ * compiled file, but it's generally better to create a new file per style scope.
+ *
+ *= require_self
+ *= require_tree .
+ */
+ /*----------------------------------- general styles----------*/
+ .login{
+  margin: auto;
+  max-width: 100%;
+  height: 100%;
+  background-color: #b0e0e6;
+  padding-left: 55px;
+  padding-bottom: 20px;
+  border-bottom: dashed;
+  border-color: pink;
+
+}
+
+.users{
+  margin: auto;
+  max-width: 100%;
+  height: 100%;
+  background-color: #b0e0e6;
+  padding-left: 55px;
+  padding-bottom: 20px;
+  border-bottom: dashed;
+  border-color: pink;
+
+}
+.signup{
+  margin: auto;
+  max-width: 100%;
+  height: 100%;
+  background-color: #b0e0e6;
+  padding-left: 55px;
+  padding-bottom: 20px;
+  border-bottom: dashed;
+  border-color: pink;
+
+}
+
+/*.signup p {
+  font-family: Halant; 
+}*/
+
+.message{
+  font-family: Halant;
+}
+
+
+.homebody{
+  margin: auto;
+  max-width: 100%;
+  height: 100%;
+  background-color: #b0e0e6;
+  padding-top: 25px;
+  padding-left: 55px;
+  padding-bottom: 20px;
+  border-bottom: dashed;
+  border-color: pink;
+  border
+}
+
+.homebody a {
+ font-family: Halant;
+ text-decoration: none;
+ border-bottom: solid;
+ border-color: pink;
+ color: black;
+}
+
+.homebody h2 {
+  font-family: Halant;
+
+}
+
+
+.linksbox { 
+/*  border-top: solid;
+border-color: ;*/
+width: 100%;
+}
+
+
+
+.wholebody{
+
+  margin: auto;
+  width: 100%;
+  background-color: #b0e0e6;
+  border-top: solid;
+  border-bottom: solid;
+  border-right: solid;  
+  border-left: solid;
+  border-color: pink;
+}
+
+.heading {
+  padding-left: 60px; 
+  padding-top: 40px; 
+  border-bottom:dashed;
+  border-color: pink;
+  background-color: white;
+  /*background-image: url('pink-chevron-stripes-05.png');*/
+}
+
+.useraction a {
+  color: black;
+  text-decoration: none;
+  height: 77px;
+  weight: 150px;
+  font-family: Halant;
+  font-size: 20px;
+  padding-bottom: 0px;
+}
+
+.useraction {   
+  padding-top: 55px;
+  position: absolute;
+  right: 20px;
+  top: 20px;
+   /* margin: auto;
+   width: 100%;*/
+ }
+
+ @font-face {
+  font-family: Halant;
+  src: url('SugarcubesRegular.ttf');
+}
+
+.logout{
+
+  text-align: left;
+
+}
+
+
+.home{
+
+  text-align: center;
+  padding-top: 100px;
+  padding-left: 60px; 
+}
+
+.homebody{
+
+  /*  text-align: center;*/
+  padding-top: 30px;
+  padding-left: 60px;
+
+}
+
+.recipes{
+  font-family: arial;
+
+}
+
+.category{
+  font-family: arial;
+}
+
+
+
+/*.changes{
+
+  font-family: arial;*/
+
+  /*}*/
+
+  body {
+    /*background-image: url('carrot-cooking-eat-1398.jpg');*/*/
+    background-size: 100% ;
+    background-repeat: no-repeat;
+    background-color: white}
+
+    .yield {
+      border-top: dashed;
+      border-color: pink;
+    }
+
+    .title {
+      text-align: center;
+      padding-left: 50px;
+      font-family: Halant;
+    }
+
+    .navigation {
+      max-width: 100%;
+      max-height: 100%;
+      background-color: transparent;
+      /*border:1px solid #ccc;*/
+      border-width:1px 0;
+      list-style:none;
+      margin:0;
+      padding:0;
+      text-align:center;
+      color: white;
+    }
+
+
+    li  {
+      display:inline;
+      font-family:  arial;
+      color: pink;
+    }
+
+    li a {
+      color: black;
+    }
+
+    h1  { 
+      font-family: Halant;
+      color: black;
+    }
+
+    p   {
+
+      font-family: arial;
+    }
+
+
+
+
+/*.footer ul li {
+     display: inline-block;
+     list-style: none;
+     color: black;
+     font-size: 16px;
+     font-family: arial;
+     text-align: center;
+     padding-left: 10px;
+     padding-top: 250px;
+     padding-bottom: 10px;
+     transition: ease-in all 300ms;
+    -webkit-transition: ease-in all 300ms;
+    }*/
+
+    .links a {
+
+      font-family: Halant;
+      padding-top: 30px;
+      padding-left: 20px;
+      color: black;
+      text-decoration: none;
+      width: 100%;
+
+    }
+
+    .footermain
+
+    {
+      position: center;
+      padding-left: 575px;
+      padding-top: 30px;
+    }
+
+
+
+    /*--------------All Recipes -----------------------------*/
+    .pleaselogin{
+      font-family: Halant;
+
+    }    
+
+    .pleaselogin a {
+      font-family: Halant;
+      text-decoration: none;
+      color:black;
+      border-bottom: solid;
+      border-color: pink;
+
+    }
+
+    .quantites{
+
+    }
+
+    .fifth {
+      width: 20%;
+    }
+
+    .inline-block {
+      display: inline-block;
+    }
+
+    .search {
+      font-family: Halant;
+      display: inline-block;
+
+    }
+
+    .buttons{
+      display: inline-block;
+    }
+
+
+    .buttons a {
+      font-family: Halant;
+      text-decoration: none;
+    }
+
+    .recipeheading{
+      margin: auto;
+      max-width: 100%;
+      height: 100%;
+      background-color: #b0e0e6;
+      padding-left: 55px;
+      padding-bottom: 20px;
+      border-bottom: dashed;
+      border-color: pink;
+    }
+
+
+
+    .recipeshow1{
+      margin: auto;
+      max-width: 100%;
+
+      background-color: #b0e0e6;
+      padding-left: 55px;
+      padding-bottom: 20px;
+      border-bottom-style: dashed;
+      border-bottom-color: pink;
+      border-bottom-size: 2px; 
+
+    }
+
+
+
+    .recipeshow2{
+
+      margin: auto;
+      max-width: 100%;
+      height: 100%;
+      background-color: #b0e0e6;
+      padding-left: 20px;
+      border-bottom: dashed;
+      border-color: pink;
+
+    }
+
+
+
+    .recipeshow2 a {
+      text-decoration: none;
+      border-bottom: solid;
+      border-color: pink;
+      font-family: Halant;
+
+    }
+
+
+    .recipeshow2 h3 {
+      font-family: Halant;
+      color: black;
+    }
+
+    .newrecipe {
+      margin: auto;
+      max-width: 100%;
+      height: 100%;
+      background-color: #b0e0e6;
+      padding-top: 25px;
+      padding-left: 55px;
+      padding-bottom: 20px;
+      border-bottom: dashed;
+      border-color: pink;
+      border
+
+    }
+
+    .newrecipe a {
+      font-family: Halant;
+      font-family: Halant;
+      text-decoration: none;
+      border-bottom: solid;
+      border-color: pink;
+      color:black;
+
+
+    }
+
+
+    .form{ 
+      font-family: Halant;
+      color: black;
+    }
+
+    .actions{
+      font-family: Halant;
+      color: pink;
+    }
+
+
+    .addrecipe{
+      margin: auto;
+      max-width: 100%;
+      height: 100%;
+      background-color: #b0e0e6;
+      padding-left: 55px;
+      padding-bottom: 20px;
+      border-bottom: dashed;
+      border-color: pink;
+      border
+    }
+
+    .addrecipe p a{
+      font-family: Halant;
+
+    }
+
+    .editrecipe{
+      margin: auto;
+      max-width: 100%;
+      height: 100%;
+      background-color: #b0e0e6;
+      padding-left: 55px;
+      padding-bottom: 20px;
+      border-bottom: dashed;
+      border-color: pink; 
+    }
+
+    .showrecipe{
+      margin: auto;
+      max-width: 100%;
+      height: 100%;
+      background-color: #b0e0e6;
+      padding-left: 55px;
+      padding-bottom: 20px;
+      border-bottom: dashed;
+      border-color: pink; 
+    }
+
+    .recipestyle p {
+      font-family: Halant;
+    }
+
+    .actions a {
+      font-family: Halant;
+      font-family: Halant;
+      text-decoration: none;
+      border-bottom: solid;
+      border-color: pink;
+      color:black;
+    }
+
+    .editrecipe a {
+      font-family: Halant;
+      font-family: Halant;
+      text-decoration: none;
+      border-bottom: solid;
+      border-color: pink;
+      color:black;
+    }
+
+    /*================Categories========================*/
+
+    .category {
+      margin: auto;
+      max-width: 100%;
+      height: 100%;
+      background-color: #b0e0e6;
+      padding-left: 55px;
+      padding-bottom: 20px;
+      /*border-bottom: dashed;*/
+      border-color: pink;
+
+    }
+
+    .category1 {
+      margin: auto;
+      max-width: 100%;
+      height: 100%;
+      background-color: #b0e0e6;
+      padding-left: 55px;
+      padding-bottom: 20px;
+      border-bottom: dashed;
+      border-color: pink;
+    }
+
+    .category2{
+      margin: auto;
+      max-width: 100%;
+      height: 100%;
+      background-color: #b0e0e6;
+      padding-left: 55px;
+      padding-bottom: 20px;
+      border-bottom: dashed;
+      border-color: pink;
+      border  
+    }
+
+    .category2 a {
+      text-decoration: none;
+      border-bottom: solid;
+      border-color: pink;
+      color: black;
+      font-family: Halant;
+    }
+
+    .category2 h3{
+      font-family: Halant;
+      color: black; 
+    }
+
+    .addcategory {
+      margin: auto;
+      max-width: 100%;
+      height: 100%;
+      background-color: #b0e0e6;
+      padding-left: 60px;
+      padding-bottom: 20px;
+      border-bottom: dashed;
+      border-color: pink;
+      border
+    }
+
+
+    .categoryform{
+      margin: auto;
+      max-width: 100%;
+      height: 100%;
+      background-color: #b0e0e6;
+      padding-left: 60px;
+      padding-bottom: 20px;
+      border-bottom: dashed;
+      border-color: pink;
+      font-family: Halant;
+      padding-top: 15px;
+    }
+
+    .categoryform a {
+      font-family: Halant;
+      text-decoration: none;
+      border-bottom: solid;
+      border-color: pink;
+      color:black;
+    }
+
+    .categoryshow{
+      margin: auto;
+      max-width: 100%;
+      height: 100%;
+      background-color: #b0e0e6;
+      padding-left: 60px;
+      padding-bottom: 20px;
+      border-bottom: dashed;
+      border-color: pink;
+      font-family: Halant;
+    }
+
+    .editcategory{
+      margin: auto;
+      max-width: 100%;
+      height: 100%;
+      background-color: #b0e0e6;
+      padding-left: 60px;
+      padding-bottom: 20px;
+      border-bottom: dashed;
+      border-color: pink;
+      font-family: Halant;
+    }
+
+    .editform{
+
+    }
+
+    .categoryshow a {
+      font-family: Halant;
+      font-family: Halant;
+      text-decoration: none;
+      border-bottom: solid;
+      border-color: pink;
+      color:black;
+    }
+
+    .editcategory a{
+      font-family: Halant;
+      font-family: Halant;
+      text-decoration: none;
+      border-bottom: solid;
+      border-color: pink;
+      color:black;
+
+    }
+    /*================ingredients======================*/
+
+    .ingredients{
+      font-family: Halant;
+    }
+
+    .ingredients p a{
+      font-family: Halant;
+      text-decoration: none;
+      border-bottom: solid;
+      border-color: pink;
+      color:black;
+    }
+
+
+    .ingredientoptions a {
+      font-family: Halant;
+      text-decoration: none;
+      border-bottom: solid;
+      border-color: pink;
+      color: black;
+    }
+
+    .ingredientshow{
+      margin: auto;
+      max-width: 100%;
+      height: 100%;
+      background-color: #b0e0e6;
+      padding-left: 60px;
+      padding-bottom: 20px;
+      border-bottom: dashed;
+      border-color: pink;
+      border
+
+    }
+
+    .ingredientall{
+      margin: auto;
+      max-width: 100%;
+      height: 100%;
+      background-color: #b0e0e6;
+      padding-left: 60px;
+      padding-bottom: 20px;
+      border-bottom: dashed;
+      border-color: pink;
+      border
+    }
+
+    .ingredientheading{
+      border-bottom: dashed;
+      border-color: pink;
+    }
+
+    .ingredientaction a {
+      font-family: Halant;
+      text-decoration: none;
+      color:black;
+      border-bottom: solid;
+      border-color: pink;
+    }
+
+    .ingredientheading2{
+      font-family: Halant;
+    }
+
+
+    .addingredient{
+      margin: auto;
+      max-width: 100%;
+      height: 100%;
+      background-color: #b0e0e6;
+      padding-left: 60px;
+      padding-bottom: 20px;
+      border-bottom: dashed;
+      border-color: pink;
+    }
+
+    .formingredient {
+      font-family: Halant;
+
+    }
+
+    .addingredient{
+      padding-top: 20px;
+    }
+
+    .addingredient p a{
+      font-family: Halant;
+      text-decoration: none;
+      border-bottom: solid;
+      border-color: pink;
+      color: black;
+
+    }
+
+
+    .addingredientheading{ 
+      margin: auto;
+      max-width: 100%;
+      height: 100%;
+      background-color: #b0e0e6;
+      padding-left: 60px;
+      padding-bottom: 20px;
+      border-bottom: dashed;
+      border-color: pink;
+      border
+    }
+
+
+    .ingredientbody {
+      margin: auto;
+      max-width: 100%;
+      height: 100%;
+      background-color: #b0e0e6;
+      padding-top: 25px;
+      padding-left: 55px;
+      padding-bottom: 20px;
+      border-bottom: dashed;
+      border-color: pink;
+      border
+
+    }
+
+    .ingredienttitle{
+      font-family: Halant;
+      padding-top: 20px;
+
+    }
+
+    .ingredientbody{
+      margin: auto;
+      max-width: 100%;
+      height: 100%;
+      background-color: #b0e0e6;
+      padding-top: 25px;
+      padding-left: 55px;
+      padding-bottom: 20px;
+      border-bottom: dashed;
+      border-color: pink;
+      border
+
+    }
+
+    /*===========footer=============================*/
+
+    .footer {
+      max-width: 100%;
+      height: 100%;
+      background-color: #b0e0e6;
+      padding-top: 20px;
+      padding-left: 58px;
+    }
+
+    .footer p{
+      font-family: Halant;
+    }
+
+
+    .commentsdelete a {
+      font-family: Halant;
+      text-decoration: none;
+      border-bottom: solid;
+      border-color: pink;
+      color:black;
+    }
+
+    .commentform {
+      margin: auto;
+      max-width: 100%;
+      height: 100%;
+      background-color: #b0e0e6;
+      padding-top: 25px;
+      padding-left: 55px;
+      padding-bottom: 20px;
+      border-bottom: dashed;
+      border-color: pink;
+      border
+    }
+
+    .commentform1{
+      font-family: Halant;  
+    }
+
+
+

@@ -1,0 +1,27 @@
+
+<div class='addingredientheading'>
+  <h1>Please Add Your New Ingredient</h1>
+</div>
+
+
+<%#= form_for @ingredients do |f| %>
+<%#= f.error_messages %>
+ <!--  <p>
+ <%#= f.label :name %><br /> -->
+ <%#= f.text_field :name %>
+ <!--  </p>
+  <p>
+    <%#= f.label :image %><br /> -->
+    <%#= f.text_field :image %>
+  </p>
+  
+  <!-- <p><%#= f.submit %></p> -->
+  <%# end %>
+
+  <%# title "New Ingredient" %>
+  <div class='addingredient'>
+
+    <%= render 'form' %>
+
+    <p><%= link_to "Back to List", ingredients_path %></p>
+  </div>

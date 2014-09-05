@@ -1,0 +1,23 @@
+
+<div class='ingredientshow'>
+  <p>
+    <div class='ingredienttitle'>
+      <h2> Ingredient Name : <%= @ingredient.name %></h2>
+    </div>
+  </p>
+
+
+  <div class='ingredientoptions'>
+
+    <% if can? :update, @recipe %>
+    <%= link_to "Edit", edit_ingredient_path(@ingredient) %> 
+    <% end %> 
+    <p>
+      <% if can? :destroy, @recipe %>
+      <%= link_to "Destroy", @ingredient, :confirm => 'Are you sure?', :method => :delete %> 
+      <% end %>
+      <p>
+        <%= link_to "View All", ingredients_path %>
+
+      </div>
+    </div>

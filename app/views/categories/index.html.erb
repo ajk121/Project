@@ -1,0 +1,23 @@
+<div class='category1'> 
+  <h1>All Available Categories</h1>
+</div>
+
+<div class='category2'>
+  <ul><% @categories.each do |category| %></ul>
+
+  <h3>Category Name : <%= category.name %></h3>
+
+  <!-- <div class='changes'> -->
+  <%= link_to 'Show', category %>
+  <% if can? :update, @recipe %> &nbsp;
+  <%= link_to 'Edit', edit_category_path(category) %>
+  <% end %> 
+  <% if can? :destroy, @recipe %>&nbsp;
+  <%= link_to 'Delete', category_path(category), method: :delete, confirm: 'Are you sure you would like to delete this category?' %>
+  <% end %>
+  <!-- </div> -->
+
+  <br>
+  <% end %>
+  <br>
+</div>

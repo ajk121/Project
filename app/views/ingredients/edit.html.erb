@@ -1,0 +1,16 @@
+<div class='ingredientbody'>
+
+  <h1>Please Edit Your New Ingredient</h1>
+
+  <div class='ingredients'>
+    <%= form_for @ingredient do |f| %>
+    <%= f.label :name %>
+    <%= f.text_field :name %>
+    <%= f.submit 'Edit Ingredient!' %>
+    
+    <% end %>
+
+    <p><%= link_to "Back to ingredients", ingredients_path %></p> 
+
+  </div>  
+</div>

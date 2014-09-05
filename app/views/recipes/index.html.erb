@@ -1,0 +1,73 @@
+  <!-- <div class='recipeshow1'> -->
+  <div class='recipeheading'>  
+    <h1>All Available Recipes</h1>
+
+    <div class='search'>
+      <%= search_form_for @q, url: search_path, html: {:method => :post} do |f| %>
+      <!-- # this is  -->
+      <%= f.condition_fields do |c|%>
+      <div class="field inline-block">
+        <!-- # this is building the select --> Please search with:
+        <%= c.attribute_fields do |a| %> 
+        <%= a.attribute_select associations: [:name] %>               
+
+        <% end %>
+        <!-- # this gives us the select options for types of searches (predicates):
+      -->        <%= c.predicate_select %> 
+      <%= c.value_fields do |v| %>
+      <%= v.text_field :value %>
+      <% end %>
+    </div>
+    <% end %>
+    <%= f.submit class: 'submit button' %>
+    <% end %>
+  </div>
+
+  <div class='buttons'>
+    <button><%= sort_link @q, :name %></button>
+    <button><%= sort_link @q, :published_at %></button>
+  </div>
+</div>
+
+<div class="recipeshow2">   
+  <ul>
+    <% @recipes.each do |recipe| %>
+
+    <li>
+
+
+     <!--  <div class="recipeshow2"> -->
+     <h3> Recipe Name : <%= recipe.name %> </h3>
+     <div class='changes'>
+      <%= link_to 'Show', recipe %>
+      <p>
+        <% if can? :update, @recipe %>
+        <%= link_to 'Edit', edit_recipe_path(recipe) %>
+        <% end %> 
+      </p>
+      <% if can? :destroy, @recipe %>
+      <%= link_to 'Delete', recipe_path(recipe), method: :delete, confirm: 'Are you sure you would like to delete this recipe?' %>
+      <% end %>
+    </p>
+  </div> 
+  
+  
+  <!--  </div>  --> 
+
+  
+  
+
+  <br>
+  
+
+
+
+
+</li>
+
+<% end %>
+
+
+</ul>
+</div> 
+</div> 

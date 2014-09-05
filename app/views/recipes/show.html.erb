@@ -1,0 +1,55 @@
+
+<div class='showrecipe'>
+  <div class='recipestyle'>  
+    <p> Recipe Name : <%= @recipe.name %></p>
+    <p> Instructions :<%= @recipe.instructions %></p>
+    <p> Category : <%= @recipe.category.try :name %></p>
+    <p>
+
+      <b>Image :</b>
+      <br>
+      <%= image_tag @recipe.recipe_image.url %>
+    </p>
+
+    <p>
+      <strong>Ingredients :</strong><br>
+      <% @recipe.quantities.each do |quantity| %>
+      <%= quantity.quantity %> of <%= quantity.ingredient.try(:name) %><br>
+      <% end %>
+    </p>
+
+    <p>
+      <strong>Comments :</strong><br>
+      <% @recipe.comments.each do |comment| %>
+      <%= render comment %><br>
+      <% end %>
+    </p>
+
+    <% if can? :create, Comment %>
+    <%= form_for @comment do |f| %>
+    <%= hidden_field_tag :recipe_id, @recipe.id %>
+
+    <p> <%= f.label :Add_your_comments_below %> : </p>
+    
+    <%= f.text_area :comment %>
+  </div>
+
+  <div class="actions">
+    <%= f.submit %> 
+    
+    <p><%= link_to "Edit Recipe", edit_recipe_path%></P>
+      <p><%= link_to "Back to recipes", recipes_path %></p>
+    </div>
+  </div>
+  <% end %> 
+
+
+
+  <% else %>
+  <div class='pleaselogin'>
+    Please Login To Make A Comment
+    <p><%= link_to "Back to recipes", recipes_path %></p>
+  </div>
+
+  <% end %> 
+</div>

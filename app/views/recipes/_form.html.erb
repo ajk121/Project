@@ -1,0 +1,42 @@
+<div class='form'>
+  <% if can? :update, @recipe %>
+  <%= form_for @recipe do |f| %>
+  <%= f.label :name %>
+  <br>
+  <%= f.text_field :name,  {class: "fifth"} %>
+  <br>
+  <%= f.label :instructions %>
+  <br>
+  <%= f.text_area :instructions, {class: "fifth"}%>
+  <br>
+  <%= f.label :category_id %>
+  <br>
+  <%= f.collection_select( :category_id, Category.all, :id, :name,{}, {class: "fifth"} )%>
+  <br>
+
+  <%= f.fields_for :quantities do |i| %>
+  <div class="field">
+    <%= i.hidden_field :ingredient_id %>
+    <%#= i.text_field :quantity %>
+    <%= i.label :quantity, "Quantity of #{i.object.ingredient.try :name}" %>
+
+    <div class='quantites'>  
+      <%= i.text_field :quantity, {class: "fifth"} %>
+    </div>
+  </div>
+  <% end %>
+  <br>
+  <div class="field">
+    <%= f.label :recipe_image %>
+    <br>
+    <%= f.file_field :recipe_image %>
+  </div>
+  <br>
+
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+  <% end %>
+  <% end %> 
+
+</div>
